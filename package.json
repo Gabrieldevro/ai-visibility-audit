@@ -1,0 +1,15 @@
+{
+  "name": "ai-visibility-audit",
+  "version": "1.0.0",
+  "description": "Can ChatGPT, Claude and Perplexity find and cite your site? Checks robots.txt per AI agent, firewall/CDN blocks, server-rendered content, llms.txt and entity schema. Zero dependencies.",
+  "type": "module",
+  "bin": { "ai-visibility-audit": "bin/ai-visibility-audit.js" },
+  "exports": { ".": "./src/audit.js", "./robots": "./src/robots.js", "./agents": "./src/agents.js" },
+  "files": ["bin", "src"],
+  "scripts": { "test": "node --test" },
+  "engines": { "node": ">=18" },
+  "keywords": ["seo", "geo", "ai-search", "llms.txt", "robots.txt", "chatgpt", "claude", "perplexity", "gptbot", "claudebot", "audit", "cli"],
+  "author": "Gabriel Dev <contact@gabrieldev.eu> (https://gabrieldev.eu)",
+  "repository": { "type": "git", "url": "https://github.com/Gabrieldevro/ai-visibility-audit.git" },
+  "license": "MIT"
+}
